@@ -1,0 +1,419 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    width: 20px;
+}
+
+::-webkit-scrollbar-track{
+    background: #6b6b6b;   
+}
+
+::-webkit-scrollbar-thumb{
+    background: #759364;
+}
+
+.hero{
+    background-image: url("potted plants.png");
+    height: 100vh;
+    min-height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    animation: animate alternate-reverse 30s forwards running infinite ease-in-out;
+}
+
+nav{
+    position: relative;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 45px;
+    z-index: 2;
+}
+
+
+.logo{
+    cursor: pointer;
+    letter-spacing: 1px;
+    font-size: 40px;
+    color: #759364;
+    text-shadow: 0px 0px 1px rgb(173, 171, 171), 0px 0px 10px rgb(173, 171, 171);
+}
+
+span{
+    color: #182e0b;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding-right: 30px;
+    padding-top: 8px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #182e0b;
+    font-weight: 800;
+    font-size: 20px;
+    transition: .4s;
+    text-shadow: 0px 0px 1px rgb(173, 171, 171), 0px 0px 10px rgb(173, 171, 171);
+}
+
+nav ul li a:hover{
+    color: #759364;
+}
+
+.content{
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+}
+
+.message{
+    font-size: 50px;
+    color: #182e0b;
+    letter-spacing: 1px;
+    text-shadow: 0px 0px 1px rgb(173, 171, 171), 0px 0px 10px rgb(173, 171, 171);
+    line-height: 65px;
+}
+
+.year{
+    color: #182e0b;
+    font-size: 18px;
+    padding-bottom: 25px;
+    padding-top: 10px;
+    font-weight: 800;
+}
+
+.sign-up{
+    padding: 10px 80px;
+    background-color: #182e0b;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid transparent;
+    outline: none;
+    font-size: 25px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    transition: .3s;
+    box-shadow: 0px 0px 1px rgb(173, 171, 171), 0px 0px 10px rgb(173, 171, 171);
+}
+
+.sign-up:hover{
+    border: 2px solid #182e0b;
+    background-color: transparent;
+    color: #182e0b;
+}
+
+h6{
+    padding-top: 40px;
+    font-size: 15px;
+}
+
+.buttons i{
+    margin: 25px 0;
+    margin-right: 20px;
+    background-color: #cae2bc;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 50px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.buttons i:hover{
+    transform: scale(1.2);
+    color: #182e0b;
+}
+.about{
+    width: 100%;
+    padding: 100px 0px;
+    background-color: #dddddd;
+}
+
+.about img{
+   height: auto;
+   width: 450px;
+   border: 5px solid #182e0b;
+   border-radius: 20px;
+   
+}
+
+.about-text{
+    width: 500px;
+}
+
+.about-text h2{
+    color: #182e0b;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.about-text h5{
+    font-size: 20px;
+    font-weight: bold;
+    color: #759364;
+}
+
+.about-text p{
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+
+.learn-more{
+    padding: 10px 30px;
+    border-radius: 30px;
+    background-color: #182e0b;
+    border: 2px solid transparent;
+    outline: none;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: .4s;
+}
+
+.learn-more:hover{
+    background-color: transparent;
+    border: 2px solid #182e0b;
+    color: #182e0b;
+}
+
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.shop{
+    width: 100%;
+    padding: 100px 0;
+    background-color: #fff;
+}
+
+.shop .title h1{
+    color: #759364;
+    text-align: center;
+    margin: 30px auto;
+    font-size: 60px;
+}
+
+.box{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    height: 600px;
+    width: 330px;
+    padding: 20px 35px;
+    background: #d8d8d8;
+    margin: 20px;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 25px;
+    box-shadow: 0px 0px 1px rgb(92, 92, 92), 0px 0px 20px rgb(92, 92, 92);
+}
+
+.box .card img{
+    width: 280px;
+    height: 340px;
+    position: relative;
+    transform: translateX(-3%);
+    border-radius: 20px;
+    border: 5px solid #182e0b;
+    margin-bottom: 15px;
+}
+
+.box .card h2{
+    color: #182e0b;
+}
+
+.pra p{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.pra .btn{
+    text-decoration: none;
+    color: #182e0b;
+    font-weight: 700;
+    padding: 10px 30px;
+    background-color: #fff;
+    border-radius: 30px;
+    border: 3px solid #182e0b;
+    transition: .4s;
+}
+
+.pra .btn:hover{
+    background-color: #182e0b;
+    color: #fff;
+}
+
+.Contact-Us{
+    display: grid;
+    padding: 100px 0;
+    width: 100%;
+    place-items: center;
+    background: #eeeeee;
+}
+
+.header{
+    color: #759364;
+    font-size: 23px;
+    margin-bottom: 80px;
+}
+
+.wrapper{
+    display: inline-flex;
+}
+
+.wrapper .icon{
+    margin: 0px 20px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+    transition: all .4s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+
+.wrapper .icon .font{
+    position: relative;
+    height: 60px;
+    width: 60px;
+    display: block;
+    background: #fff;
+    text-align: center;
+    border-radius: 50px;
+    z-index: 2;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+}
+
+.wrapper .icon .font i{
+    font-size: 25px;
+    line-height: 60px;
+}
+
+.wrapper .icon:hover .font i{
+    color: #fff;
+}
+
+.wrapper .icon .tooltip{
+    position: absolute;
+    top: 0px;
+    background: #fff;
+    font-size: 20px;
+    padding: 10px 18px;
+    border-radius: 25px;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all .4s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+
+.wrapper .icon:hover .tooltip{
+    top: -70px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.wrapper .icon .tooltip:before{
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background: #fff;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    transition: all .4s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+
+.wrapper .icon:hover .font,
+.wrapper .icon:hover .tooltip{
+    text-shadow: 0px -1px 0px rgba(0,0,0,0.4);
+}
+
+.wrapper .meta:hover .font,
+.wrapper .meta:hover .tooltip,
+.wrapper .meta:hover .tooltip::before{
+    background: #017bed;
+}
+.wrapper .Twitter:hover .font,
+.wrapper .Twitter:hover .tooltip,
+.wrapper .Twitter:hover .tooltip::before{
+    background: #25a1e8;
+}
+.wrapper .Instagram:hover .font,
+.wrapper .Instagram:hover .tooltip,
+.wrapper .Instagram:hover .tooltip::before{
+    background: #882ac3;
+}
+.wrapper .Email:hover .font,
+.wrapper .Email:hover .tooltip,
+.wrapper .Email:hover .tooltip::before{
+    background: #d14439;
+}
+.wrapper .WhatsApp:hover .font,
+.wrapper .WhatsApp:hover .tooltip,
+.wrapper .WhatsApp:hover .tooltip::before{
+    background: #499e32;
+}
+
+.copyright{
+    margin-bottom: -9%;
+    font-weight: 500;
+    color: #182e0b;
+}
+
+@keyframes animate{
+    0%
+    {
+        background-image: url("wide\ leaf.jpg");
+    }
+    20%
+    {
+        background-image: url("leafs.jpg");
+    }
+    40%
+    {
+        background-image: url("potted\ plants.png");
+    }
+    60%
+    {
+        background-image: url("branch\ leaf.jpg");
+    }
+    80%
+    {
+        background-image: url("cactus.jpg");
+    }
+    100%
+    {
+        background-image: url("leafs.jpg");
+    }
+
+    
+}
